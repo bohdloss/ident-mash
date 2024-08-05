@@ -1,7 +1,7 @@
 # Ident-Mash
 
 Have you ever had a bunch of identifiers that you "just want to mash together"
-inside a macro but don't want to resort to writing a  procedural macro?
+inside a macro but don't want to resort to writing a procedural macro?
 
 Ident-Mash has got you covered, because it takes care of the annoying proc macro
 part for you!
