@@ -36,14 +36,14 @@ instead of idents.
 But there are other functions, which all take a list of idents or other functions.
 In fact, they support recursion.
 
-| Name                 | Function                                                                                     |
-|----------------------|----------------------------------------------------------------------------------------------|
-| `:upper_case:`       | Turns everything uppercase                                                                   |
-| `:lower_case`        | Turns everything lowercase                                                                   |
-| `:snake_case`        | Uses the `convert_case` crate to convert the ident to `snake_case`                           |
-| `:upper_snake_case`  | Same working mechanism but converts to `UPPER_SNAKE_CASE`                                    |
-| `:pascal_case`       | Same working mechanism but covnerts to `PascalCase`                                          |
-| `:hash`              | Computes a hash on the concatenated idents. Useful for generating deterministic random names |
+| Name                | Function                                                                                     |
+|---------------------|----------------------------------------------------------------------------------------------|
+| `:upper_case`       | Turns everything uppercase                                                                   |
+| `:lower_case`       | Turns everything lowercase                                                                   |
+| `:snake_case`       | Uses the `convert_case` crate to convert the ident to `snake_case`                           |
+| `:upper_snake_case` | Same working mechanism but converts to `UPPER_SNAKE_CASE`                                    |
+| `:pascal_case`      | Same working mechanism but covnerts to `PascalCase`                                          |
+| `:hash`             | Computes a hash on the concatenated idents. Useful for generating deterministic random names |
 
 Extreme example:
 `:hash(:snake_case(x + y + z) + x) + z + :hash(z)`
