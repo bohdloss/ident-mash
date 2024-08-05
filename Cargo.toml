@@ -2,6 +2,12 @@
 name = "ident-mash"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/bohdloss/ident-mash"
+keywords = ["macro", "ident", "concat", "hash", "macro_rules"]
+categories = ["rust-patterns"]
+description = "Mash idents together inside macro_rules!"
+license = "MIT"
+readme = "README.md"
 
 [lib]
 proc-macro = true

@@ -1,8 +1,13 @@
 use ident_mash::mash;
 
-mash!(name = :snake_case("my mod name") => mod $name { pub const VALUE: usize = 15; });
-mash!(name = :upper_snake_case("my const name") => pub const $name: usize = 129;);
-mash!(name = :pascal_case("my struct name") => struct $name;);
+mash!(
+	mod_name = :snake_case("my mod name") &
+	const_name = :upper_snake_case("my const name") &
+	struct_name = :pascal_case("my struct name") => 
+	mod $mod_name { pub const VALUE: usize = 15; }
+	pub const $const_name: usize = 129;
+	struct $struct_name;
+);
 
 #[test]
 fn main() {
